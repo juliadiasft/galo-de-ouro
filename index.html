@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galo de Ouro · Qual é o teu bloqueio com dinheiro?</title>
+<meta name="description" content="Quiz de 1 minuto com o Galo de Ouro: descobre se o teu bloqueio com dinheiro é medo, culpa ou merecimento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <section id="inicio">
+    <div class="hero"><img src="galo.webp" alt="Galo de Ouro na praia com o Caderno da Prosperidade"></div>
+    <div class="card sobe">
+      <span class="tag">Quiz de 1 minuto · 6 perguntas</span>
+      <h1>Qual é o teu bloqueio com dinheiro?</h1>
+      <p>Medo, culpa ou merecimento? Responde rapidinho e o Galo te mostra o que tá segurando o dinheiro longe de ti, e o que fazer a partir de hoje.</p>
+      <button id="comecar" class="btn">Começar o quiz 🐓</button>
+      <small class="nota">Sem cadastro. Ninguém vê tuas respostas.</small>
+    </div>
+  </section>
+
+  <section id="quiz" hidden>
+    <div class="card">
+      <div class="barra"><i id="q-barra"></i></div>
+      <span id="q-num" class="tag"></span>
+      <h2 id="q-texto"></h2>
+      <div id="q-opcoes" class="opcoes"></div>
+    </div>
+  </section>
+
+  <section id="resultado" hidden>
+    <div class="card">
+      <span class="tag">Teu bloqueio é</span>
+      <div class="r-topo"><span id="r-emoji" class="r-emoji"></span><h2 id="r-nome"></h2></div>
+      <div class="fala"><img src="avatar.jpg" alt=""><p id="r-galo"></p></div>
+      <p id="r-explica"></p>
+      <p class="dias" id="r-dias"></p>
+    </div>
+    <div class="card oferta">
+      <span class="tag ouro">O próximo passo</span>
+      <h2>Caderno da Prosperidade do Galo</h2>
+      <p>21 dias, 5 a 10 minutos por dia, pra destravar o teu bloqueio e mudar a tua relação com o dinheiro.</p>
+      <ul>
+        <li>🧹 <b>Semana 1, Limpar:</b> as frases e hábitos que espantam dinheiro</li>
+        <li>🎯 <b>Semana 2, Pedir:</b> o pedido com número, o cheque do universo</li>
+        <li>🙏 <b>Semana 3, Receber:</b> agir, notar e agradecer</li>
+        <li>📄 PDF pra celular ou pra imprimir, chega na hora no teu e-mail</li>
+      </ul>
+      <div class="preco"><small>21 dias por menos que um lanche</small><b>R$ <span id="r-preco">17</span></b></div>
+      <button id="comprar" class="btn">Quero meu caderno 🐓</button>
+      <small class="nota">Garantia de 7 dias: não gostou, devolvemos teu dinheiro.</small>
+    </div>
+    <button id="refazer" class="link">Refazer o quiz</button>
+  </section>
+</main>
+<footer>O Galo de Ouro é um personagem criado com inteligência artificial. Conteúdo de mentalidade e hábito, sem promessa de ganho financeiro. Não substitui orientação financeira, psicológica ou médica.</footer>
+<script src="config.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
